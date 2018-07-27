@@ -8,7 +8,7 @@ import AsyncComputed from 'vue-async-computed';
 import Vuetify from 'vuetify';
 import App from './App.vue';
 import routes from './routes';
-import { store } from './store/store';
+import store from './store';
 
 Vue.use(Vuetify);
 Vue.use(VueRouter);

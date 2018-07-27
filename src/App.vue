@@ -32,7 +32,6 @@ export default {
     };
   },
   created() {
-    console.log('a');
     this.loading = false;
     this.post = true;
   },
