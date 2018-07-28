@@ -1,21 +1,23 @@
 <template>
   <v-content>
-    <v-container 
-      fluid 
-      fill-height>
-      <v-layout
-        justify-center
-        align-center
-      >
-        <v-flex 
-          text-xs-center 
-          sm6 
-          pa-5>
-          <v-card>
-            <h1>お客さんはようこそ</h1>
-          </v-card>
-        </v-flex>
-      </v-layout>
+    <app-navmenu/>
+    <v-container fluid>
+      <router-view/>
     </v-container>
+    <app-footer/>
   </v-content>
 </template>
+
+<script>
+import Navmenu from './Navmenu';
+import Footer from './Footer';
+
+export default {
+  name: 'Content',
+  components: {
+    appNavmenu: Navmenu,
+    appFooter: Footer
+  }
+}
+</script>
+

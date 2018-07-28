@@ -1,0 +1,15 @@
+<template>
+  <v-layout
+    justify-center
+    align-center
+  >
+    <v-flex 
+      text-xs-center 
+      sm6 
+      pa-5>
+      <v-card>
+        <h1>お客さんはようこそ</h1>
+      </v-card>
+    </v-flex>
+  </v-layout>  
+</template>

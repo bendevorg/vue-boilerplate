@@ -1,4 +1,4 @@
-import Content from './components/shared/Content.vue';
+import Example from './components/Example';
 
 const routes = [
   {
@@ -6,7 +6,7 @@ const routes = [
     name: 'Default',
     components: {
       // 'menu-top': Navmenu,
-      default: Content
+      default: Example
       // 'foot-compo': Footer
     }
   }
