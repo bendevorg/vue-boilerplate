@@ -1,8 +1,13 @@
 {
+  "mock":{
+    "NODE_ENV": "'\"mock\"'",
+    "PORT": 3339,
+    "BACKEND_HOST": "'\"http://localhost:3340/\"'"
+  },
   "development":{
     "NODE_ENV": "'\"development\"'",
     "PORT": 3339,
-    "BACKEND_HOST": "'\"http://localhost:3340/api\"'"
+    "BACKEND_HOST": "'\"http://localhost:3340\"'"
   },
   "production":{
     "NODE_ENV": "'\"production\"'",
