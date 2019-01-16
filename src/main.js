@@ -10,7 +10,13 @@ import App from './App.vue';
 import routes from './routes';
 import store from './store';
 
-Vue.use(Vuetify);
+Vue.use(Vuetify, {
+  theme: {
+    primary: "#1E152A",
+    secondary: "#5C6784",
+    accent: "#E8DCB9"
+  }
+});
 Vue.use(VueRouter);
 Vue.use(VueCookie);
 Vue.use(VueResource);
