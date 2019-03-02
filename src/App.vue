@@ -1,39 +1,38 @@
 <template>
   <v-app>
-    <div 
-      v-if="loading" 
-      class="loading">
-      Loading...
-    </div>
-    <div 
-      v-if="error" 
-      class="error">
-      {{ error }}
-    </div>
-    <div v-if="post">
-      <app-content/>
-    </div>
+    <v-toolbar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span>Vuetify</span>
+        <span class="font-weight-light">MATERIAL DESIGN</span>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn
+        flat
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+      >
+        <span class="mr-2">Latest Release</span>
+      </v-btn>
+    </v-toolbar>
+
+    <v-content>
+      <HelloWorld/>
+    </v-content>
   </v-app>
 </template>
 
 <script>
-import Content from './components/shared/Content';
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
   components: {
-    appContent: Content
+    HelloWorld,
   },
   data() {
     return {
-      loading: true,
-      error: null,
-      post: null
+      //
     };
   },
-  created() {
-    this.loading = false;
-    this.post = true;
-  }
 };
 </script>

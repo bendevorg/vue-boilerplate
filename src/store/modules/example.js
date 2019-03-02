@@ -1,29 +1,27 @@
-import API from '../../utils/API';
-
 const state = {
-  example: false
-}
+  example: false,
+};
 
 const getters = {
-  example: state => state.example
-}
+  example: _state => _state.example,
+};
 
 const actions = {
   example({ commit }, payload) {
-    return commit('setExample', payload + 'example');
-  }
-}
+    return commit('setExample', `${payload}example`);
+  },
+};
 
 const mutations = {
-  setExample (state, example) {
-    state.example = example;
-  }
-}
+  setExample(_state, example) {
+    _state.example = example;
+  },
+};
 
 export default {
   namespaced: true,
   state,
   getters,
   actions,
-  mutations
-}
+  mutations,
+};

@@ -1,12 +1,11 @@
 import MockAdapter from 'axios-mock-adapter';
 
-export default axios => {
+export default (axios) => {
   const mock = new MockAdapter(axios);
 
   mock
     .onGet('/')
     .reply(200, {
-      msg: 'Hi'
+      msg: 'Hi',
     });
-
 };
