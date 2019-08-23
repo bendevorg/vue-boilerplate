@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout
-      text-xs-center
+      text-center
       wrap
     >
       <v-flex xs12>
@@ -112,7 +112,7 @@ export default {
       },
       {
         text: 'Made with Vuetify',
-        href: 'https://madewithvuetifyjs.com',
+        href: 'https://madewithvuejs.com/vuetify',
       },
       {
         text: 'Twitter',
@@ -136,12 +136,7 @@ export default {
         text: 'Frequently Asked Questions',
         href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
       },
-
     ],
   }),
 };
 </script>
-
-<style>
-
-</style>
